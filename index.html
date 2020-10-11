@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <title>Империя | Магазин элемктроники</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__box-top">
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="index.html" class="header-logo__link">
+            <img src="img/logo.svg" class="header__logo" alt="" title=""/>
+        </a>
+        <a href="tel:+74959984007" class="phone-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#phone"></use></svg></a>
+        <form class="header__form">
+            <input type="search" class="header__form-search" placeholder="Строка поиска" title=""/>
+            <input type="submit" class="header__form-submit" value=""/>
+        </form>
+        <div class="header__box-phone">
+            <a href="#" class="header__phone">+7 495 998-40-07</a>
+            <span class="header-time__span">Ежедневно с 10:00 до 18:00</span>
+        </div>
+        <div class="btn-search-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#search"></use></svg></div>
+        <div class="header__account">
+            <a href="#" class="login">
+                <img src="img/icons/icon-2.svg" class="login__img" alt="" title=""/>
+            </a>
+            <a href="#" class="basket">
+                <img src="img/icons/icon-3.svg" class="basket__img" alt="" title=""/>
+            </a>
+            <span class="product">99</span>
+        </div>
+    </div>
+    <div class="header__box-bottom">
+        <div class="container">
+            <nav class="menu-categories active">
+                <button type="button" class="open-menu__button">Каталог товаров</button>
+                <ul class="menu open">
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu1"></use></svg>
+                        <a href="#" class="menu__link">Телевизионная техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu2"></use></svg>
+                        <a href="#" class="menu__link">Смартфоны и гаджеты</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu3"></use></svg>
+                        <a href="#" class="menu__link">Аксессуары и услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu4"></use></svg>
+                        <a href="#" class="menu__link">HI-FI и HI-End оборудование</a>
+                        <ul class="header-bottom-menu">
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сайндбары</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Звуковые проекторы</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">DVD и Blu-ray плееры</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Акустика центрального канала</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Системы караоке</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Встраиваемая акустика</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сетевые проигрыватели</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu5"></use></svg>
+                        <a href="#" class="menu__link">Климатическая и бытовая техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu6"></use></svg>
+                        <a href="#" class="menu__link">Система умный дом</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu-info">
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Доставка</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Самовывоз</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Гарантии</a>
+                </li>
+                <li class="menu-info__item open-bottom-menu">
+                    <span class="menu-info__span"></span>
+                    <span class="menu-info__span"></span>
+                    <span class="menu-info__span"></span>
+                    <ul class="bottom-menu">
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Оплата</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Как сделать заказ?</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">О нас</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="content-sidebar">
+    <section class="section-preview">
+        <div class="preview-slider">
+<!--            <ul class="preview-slider__pagination">-->
+<!--                <li class="preview-slider__pagination-item" onclick="previewPagination()">-->
+<!--                    <label class="preview-slider__pagination-label">-->
+<!--                        <input type="radio" name="pagination-radio" class="preview-slider__pagination-radio"-->
+<!--                               checked="checked" title=""/>-->
+<!--                        <span class="pagination-label__circle"></span>-->
+<!--                    </label>-->
+<!--                </li>-->
+<!--                <li class="preview-slider__pagination-item" onclick="previewPagination()">-->
+<!--                    <label class="preview-slider__pagination-label">-->
+<!--                        <input type="radio" name="pagination-radio" class="preview-slider__pagination-radio" title=""/>-->
+<!--                        <span class="pagination-label__circle"></span>-->
+<!--                    </label>-->
+<!--                </li>-->
+<!--                <li class="preview-slider__pagination-item" onclick="previewPagination()">-->
+<!--                    <label class="preview-slider__pagination-label">-->
+<!--                        <input type="radio" name="pagination-radio" class="preview-slider__pagination-radio" title=""/>-->
+<!--                        <span class="pagination-label__circle"></span>-->
+<!--                    </label>-->
+<!--                </li>-->
+<!--                <li class="preview-slider__pagination-item" onclick="previewPagination()">-->
+<!--                    <label class="preview-slider__pagination-label">-->
+<!--                        <input type="radio" name="pagination-radio" class="preview-slider__pagination-radio" title=""/>-->
+<!--                        <span class="pagination-label__circle"></span>-->
+<!--                    </label>-->
+<!--                </li>-->
+<!--            </ul>-->
+            <a href="#" class="preview__slide">
+                <div class="preview__slide-title">
+                    <p class="slide-title__text">C 1 по 31 августа</p>
+                    <div class="slide-title__h2">Большая распродажа</div>
+                    <div class="slide-title__h3">Iphone 11 Pro Max</div>
+                </div>
+                <img src="img/preview/img-1.jpg" class="preview__slide-img" alt="" title=""/>
+            </a>
+            <a href="#" class="preview__slide">
+                <img src="img/preview/img-2.jpg" class="preview__slide-img" alt="" title=""/>
+            </a>
+            <a href="#" class="preview__slide">
+                <img src="img/preview/img-3.jpg" class="preview__slide-img" alt="" title=""/>
+            </a>
+            <a href="#" class="preview__slide">
+                <div class="preview__slide-title">
+                    <p class="slide-title__text">C 1 по 31 августа 44</p>
+                    <div class="slide-title__h2">Большая распродажа</div>
+                    <div class="slide-title__h3">Iphone 11 Pro Max</div>
+                </div>
+                <img src="img/preview/img-1.jpg" class="preview__slide-img" alt="" title=""/>
+            </a>
+        </div>
+    </section>
+    <section class="section-price">
+        <h4 class="section-price__title">Хиты продаж</h4>
+        <div class="section-price__arrows"></div>
+        <div class="section-price__wrap">
+            <ul class="price-list">
+                <li class="price-list__item">
+                    <span class="hit">хит</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-1.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </li>
+                <li class="price-list__item">
+                    <span class="hit">хит</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-2.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">23 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </li>
+                <li class="price-list__item">
+                    <span class="hit">хит</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-3.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">21 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </li>
+                <li class="price-list__item">
+                    <span class="hit">хит</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-4.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-banner">
+        <img src="img/banners/img-1.png" class="row-banner__img" alt="" title=""/>
+        <a href="#" class="row-banner__link">
+            <h5 class="row-banner__h6">Предзаказ на экосистему Galaxy открыт</h5>
+            <p class="row-banner__text">Оформи предзаказ до 20 августа</p>
+        </a>
+    </section>
+    <section class="section-price">
+        <h4 class="section-price__title">Новинки</h4>
+        <div class="section-price__arrows">
+            <button type="button" class="section-price__arrow-left"></button>
+            <button type="button" class="section-price__arrow-right"></button>
+        </div>
+        <div class="section-price__wrap">
+            <div class="price-list price-slider">
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-5.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-6.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">23 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-7.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">21 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-brand">
+        <a href="#" class="brand__link">
+            <img src="img/brand/samsung.svg" class="brand__img" alt="Samsung" title="Samsung"/>
+        </a>
+        <a href="#" class="brand__link">
+            <img src="img/brand/lg.svg" class="brand__img" alt="LG" title="LG"/>
+        </a>
+        <a href="#" class="brand__link">
+            <img src="img/brand/playstation.svg" class="brand__img" alt="playstation" title="playstation"/>
+        </a>
+        <a href="#" class="brand__link">
+            <img src="img/brand/apple.svg" class="brand__img" alt="Apple" title="Apple"/>
+        </a>
+        <a href="#" class="brand__link">
+            <img src="img/brand/asus.svg" class="brand__img" alt="Asus" title="Asus"/>
+        </a>
+        <a href="#" class="brand__link">
+            <img src="img/brand/hp.svg" class="brand__img" alt="HP" title="HP"/>
+        </a>
+    </section>
+    <section class="section-info">
+        <p class="section-info__text">Империя HD – интернет-магазин электроники, в котором представлены лучшие модели
+            техники известных производителей
+            по конкурентным ценам.</p>
+        <p class="section-info__text">В Москве представлено большое количество интернет-магазинов техники. Важно сделать
+            правильный выбор. Мы не
+            масс-маркет и специализируемся на продаже телевизионной и аудио техники. Это значит, что наши консультаны –
+            это
+            профильные специалисты, которые разбираются во всех нюансах предлагаемой техники.</p>
+        <p class="section-info__text">Мы делаем всё, чтобы удовлетворять потребности наших покупателей, поэтому следуем
+            трем
+            важным принципам: большой
+            выбор товара, его высокое качество и доступные цены. Мы напрямую работаем с крупными поставщиками
+            электроники и
+            поэтому готовы предложить вам более низкие цены, чем в обычных магазинах. А наши постоянные покупатели будут
+            приятно удивлены, покупая технику со скидкой.</p>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__box-content">
+        <a href="index.html" class="footer-logo__link">
+            <img src="img/logo-footer.svg" class="footer-logo__img" alt="" title=""/>
+        </a>
+        <div class="footer__catalog-wrap">
+            <h6 class="footer-catalog__h6">Каталог</h6>
+            <ul class="footer-catalog">
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Телевизионная техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">HI-FI и HI-End оборудование</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Смартфоны и гаджеты</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Товары для дома и сада</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Аксессуары и услуги</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Климатическая и бытовая техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Система умный дом</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__info-wrap">
+            <h6 class="footer-info__h6">Информация</h6>
+            <ul class="footer-info">
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Доставка</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Как сделать заказ?</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Самовывоз</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">О нас</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Оплата</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Контакты</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Гарантии</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <a href="#" class="footer-contacts__phone">+7 495 998-40-07</a>
+            <p class="footer-contacts__text">г. Москва, Багратионовский пр-д, д. 7, к. 3, <br/>ТЦ "Горбушкин Двор", пав.
+                В1-053А</p>
+            <p class="footer-contacts__text">ОГРН 1197746388180 <br/>ИНН/КПП 7720470500/772101001</p>
+        </div>
+    </div>
+    <div class="footer__box-bottom">
+        <div class="box-copyright">
+            <span class="copyright">© 2020 Все авторские права защищены.</span>
+            <a href="#" class="politic__link">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

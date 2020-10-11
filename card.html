@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Империя | Магазин элемктроники</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="css/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header__box-top">
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <a href="index.html" class="header-logo__link">
+            <img src="img/logo.svg" class="header__logo" alt="" title=""/>
+        </a>
+
+
+        <a href="tel:+74959984007" class="phone-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#phone"></use></svg></a>
+
+        <form class="header__form">
+            <input type="search" class="header__form-search" placeholder="Строка поиска" title=""/>
+            <input type="submit" class="header__form-submit" value=""/>
+        </form>
+        <div class="header__box-phone">
+            <a href="#" class="header__phone">+7 495 998-40-07</a>
+            <span class="header-time__span">Ежедневно с 10:00 до 18:00</span>
+        </div>
+
+        <div class="btn-search-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#search"></use></svg></div>
+
+        <div class="header__account">
+            <a href="#" class="login">
+                <img src="img/icons/icon-2.svg" class="login__img" alt="" title=""/>
+            </a>
+            <a href="#" class="basket">
+                <img src="img/icons/icon-3.svg" class="basket__img" alt="" title=""/>
+            </a>
+            <span class="product">99</span>
+        </div>
+    </div>
+    <div class="header__box-bottom">
+        <div class="container">
+            <nav class="menu-categories active">
+                <button type="button" class="open-menu__button" onclick="openMenu()">Каталог товаров</button>
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu1"></use></svg>
+                        <a href="#" class="menu__link">Телевизионная техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu2"></use></svg>
+                        <a href="#" class="menu__link">Смартфоны и гаджеты</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu3"></use></svg>
+                        <a href="#" class="menu__link">Аксессуары и услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu4"></use></svg>
+                        <a href="#" class="menu__link">HI-FI и HI-End оборудование</a>
+                        <ul class="header-bottom-menu">
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сайндбары</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Звуковые проекторы</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">DVD и Blu-ray плееры</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Акустика центрального канала</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Системы караоке</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Встраиваемая акустика</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сетевые проигрыватели</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu5"></use></svg>
+                        <a href="#" class="menu__link">Климатическая и бытовая техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu6"></use></svg>
+                        <a href="#" class="menu__link">Система умный дом</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu-info">
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Доставка</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Самовывоз</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Гарантии</a>
+                </li>
+                <li class="menu-info__item open-bottom-menu">
+                    <div class="menu-icon-dots">
+                        <span class="menu-info__span"></span>
+                        <span class="menu-info__span"></span>
+                        <span class="menu-info__span"></span>
+                    </div>
+
+                    <ul class="bottom-menu">
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Оплата</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Как сделать заказ?</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">О нас</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="content-sidebar">
+    <div class="beadcrumbs">
+        <a href="index.html" class="beadcrumbs__link">Главная</a>
+        <a href="#" class="beadcrumbs__link">Телевизионная техника</a>
+        <a href="#" class="beadcrumbs__link">Акустика центрального канала</a>
+        <a href="#" class="beadcrumbs__link">Xiaomi</a>
+    </div>
+    <section class="section-card">
+        <div class="card__box-title">
+            <h3 class="card-title">Телевизор Mi TV 4A, 32", HD, Smart TV, Wi-Fi, DVB-T2</h3>
+            <a href="#" class="card__logo-brand">
+                <img src="img/brand/xiaomi.png" class="logo-brand__img" alt="" title=""/>
+            </a>
+        </div>
+        <div class="card__box-info">
+            <div class="card__info-left">
+                <span class="new__label">новинка</span>
+                <div class="article-number">
+                    <p class="article-number__text">Артикул:</p>
+                    <span class="article-number__span">10842146</span>
+                </div>
+                <div class="rating-wrap">
+                    <div class="rating">
+                        <div class="stars">
+                            <div class="on" style="width: 50%;"></div>
+                            <div class="live">
+                                <span data-rate="1"></span>
+                                <span data-rate="2"></span>
+                                <span data-rate="3"></span>
+                                <span data-rate="4"></span>
+                                <span data-rate="5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="rating__span">12 отзывов</a>
+                </div>
+            </div>
+            <div class="card__info-right">
+                <button class="card__button-like active">В избранное</button>
+                <button class="card__button-compare">Сравнить</button>
+            </div>
+        </div>
+        <div class="card__box-data">
+            <div class="card__preview-img">
+
+                <div class="slider-preview">
+                    <div class="slider-preview__item current">
+                        <img src="img/product/tv/mi-tv-4a-32/img-1.png" alt="" title=""/>
+                    </div>
+                    <div class="slider-preview__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img-2.png" alt="" title=""/>
+                    </div>
+                    <div class="slider-preview__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img-3.png" alt="" title=""/>
+                    </div>
+                    <div class="slider-preview__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img-4.png" alt="" title=""/>
+                    </div>
+                </div>
+
+                <div class="slider__img-view">
+                    <a data-fancybox="gallery" href="img/product/tv/mi-tv-4a-32/img.png" class="product-slider__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img.png" class="img-view" alt="" type=""/>
+                    </a>
+                    <a data-fancybox="gallery" href="img/product/tv/mi-tv-4a-32/img.png" class="product-slider__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img.png" class="img-view" alt="" type=""/>
+                    </a>
+                    <a data-fancybox="gallery" href="img/product/tv/mi-tv-4a-32/img.png" class="product-slider__item">
+                        <img src="img/product/tv/mi-tv-4a-32/img.png" class="img-view" alt="" type=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="card__content">
+                <div class="box-cost">
+                    <span class="price-after">23 990 ₽</span>
+                    <div class="sale-price-wrapper">
+                        <div class="sale-val">-30%</div>
+                        <span class="price-before">29 990 ₽</span>
+                    </div>
+                </div>
+                <button type="button" class="button-buy">В корзину</button>
+                <button type="button" class="buy-in-click" onclick="openBuyInClick()">Купить в 1 клик</button>
+                <div class="buy-in-click__modal-wrap" id="buy-in-click">
+                    <form class="buy-in-click__form form form-validate" method="post">
+                        <button type="button" class="buy-in-click__button-close" onclick="openBuyInClick()">+</button>
+                        <h4 class="buy-in-click__form-title">Купить в 1 клик</h4>
+                        <p class="buy-in-click__form-text">Чтобы продолжить, введите недостающую информацию</p>
+
+                        <div class="buy-in-click__form-box-input">
+                            <input type="text" class="buy-in-click__form-input name_inp" name="name" value="" required
+                                   placeholder="Имя" title=""/>
+                            <span class="buy-in-click__form-input-title">Имя</span>
+                        </div>
+                        <div class="buy-in-click__form-box-input">
+                            <input type="text" class="buy-in-click__form-input name_inp" name="phone" required
+                                   placeholder="Фамилия" value="" title=""/>
+                            <span class="buy-in-click__form-input-title">Телефон</span>
+                        </div>
+                        <input type="submit" class="buy-in-click__form-submit submit_btn" disabled value="Продолжить"/>
+                    </form>
+                    <div class="thanks__wrap">
+                        <button type="button" class="buy-in-click__button-close">+</button>
+                        <span class="thanks-title">Спасибо!</span>
+                        <p class="thanks__text">Ваш заказ успешно оформлен. Мы свяжемся с вами в ближайшее время. <br/>Номер
+                            вашего
+                            заказа
+                            <strong>#12345777</strong></p>
+                        <a href="#" class="thanks__link">Вернуться в магазин</a>
+                    </div>
+                </div>
+                <div class="product-info__delivery">
+                    <div class="product-info__delivery-text">
+                        <span class="delivery-text__span">Доставка:</span>
+                        <p class="delivery-text__text">Доставка: ориентировочно 15-16 августа</p>
+                    </div>
+                    <div class="product-info__delivery-text">
+                        <span class="delivery-text__span">Стоимость доставки в пределах МКАД:</span>
+                        <p class="delivery-text__text">700 рублей</p>
+                    </div>
+                    <div class="product-info__delivery-text">
+                        <span class="delivery-text__span">Доставка за МКАД</span>
+                        <p class="delivery-text__text">- посмотреть информацию</p>
+                    </div>
+                    <div class="product-info__delivery-text">
+                        <span class="delivery-text__span">Самовывоз по адресу:</span>
+                        <p class="delivery-text__text">Багратионовский проезд 7, к.3
+                            ТЦ "Горбушкин Двор", пав. B1-053А (бесплатно)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-product-info">
+        <div class="product-info__nav">
+            <ul class="product-info__button">
+                <li class="product-info__item current">
+                    <button type="button" class="info-button" onclick="boxInfoOpen()">Описание</button>
+                </li>
+                <li class="product-info__item">
+                    <button type="button" class="info-button" onclick="boxSpecificationsOpen()">Характеристики</button>
+                </li>
+                <li class="product-info__item">
+                    <button type="button" class="info-button" onclick="boxFeedbackOpen()">Отзывы</button>
+                </li>
+                <li class="product-info__item">
+                    <button type="button" class="info-button" onclick="boxQuestionsOpen()">Вопросы</button>
+                </li>
+            </ul>
+        </div>
+        <div class="product-info__text-content" id="info">
+            <h4 class="product-info__title">Описание</h4>
+            <p class="product-info__text">Телевизор LED Xiaomi Mi TV 4S 50 поддерживает встроенные тюнеры DVB-T, DVB-T2,
+                DVB-C,
+                что позволяет не подключать внешнюю приставку, чтобы смотреть цифровые телеканалы. Поддержка Smart TV, а
+                также
+                модуль Wi-Fi обеспечивают комфортное пользование цифровым контентом из сети. Вам будут доступны любые
+                сведения в
+                любом виде. Телевизор оборудован тремя разъемами HDMI и двумя разъемами USB, к которым происходит
+                подключение
+                внешних устройств и накопителей памяти. Xiaomi Mi TV 4S 50 поддерживает воспроизведение реалистичного
+                изображения
+                в разрешении 3840×2160, обладающего высокой четкостью. Картинка соответствует формату 4K, благодаря чему
+                вы
+                сможете погрузиться в происходящее на экране. Углы обзора 178 градусов обеспечивают получение
+                комфортного
+                изображения вне зависимости от ракурса просмотра. Прибор можно зафиксировать на стене, ведь он
+                предусматривает
+                поддержку стандарта крепления VESA 300×300.</p>
+            <p class="product-info__text">Информация о технических характеристиках, комплекте поставки, стране
+                изготовления и
+                внешнем виде товара носит справочный характер и основывается на последних доступных сведениях от
+                производителя</p>
+        </div>
+        <div class="product-info__specifications close" id="specifications">
+            <h4 class="product-info__title">Характеристики</h4>
+            <div class="table-specifications">
+                <span class="table-specifications__span">Общие характеристики</span>
+                <div class="table-specifications__content">
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Операционная система</span>
+                        <hr/>
+                        <span class="table-specifications__value">Android</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Версия операционной системы</span>
+                        <hr/>
+                        <span class="table-specifications__value">Android 9.0</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Модель</span>
+                        <hr/>
+                        <span class="table-specifications__value">L50M5-5ARU</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Гарантийный срок</span>
+                        <hr/>
+                        <span class="table-specifications__value">1 год</span>
+                    </div>
+                </div>
+                <span class="table-specifications__span">Экран</span>
+                <div class="table-specifications__content">
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Разрешение экрана</span>
+                        <hr/>
+                        <span class="table-specifications__value">3840x2160</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Тип матрицы</span>
+                        <hr/>
+                        <span class="table-specifications__value">TFT IPS</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Угол обзора</span>
+                        <hr/>
+                        <span class="table-specifications__value">178 градусов</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Частота обновления</span>
+                        <hr/>
+                        <span class="table-specifications__value">60 Гц</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Диагональ</span>
+                        <hr/>
+                        <span class="table-specifications__value">50"</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Разрешение HD</span>
+                        <hr/>
+                        <span class="table-specifications__value">4K HDR</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Формат экрана</span>
+                        <hr/>
+                        <span class="table-specifications__value">178 градусов</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Яркость</span>
+                        <hr/>
+                        <span class="table-specifications__value">310 кд/кв.м</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Контрастность</span>
+                        <hr/>
+                        <span class="table-specifications__value">1200:1</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Технологии улучшения изображения</span>
+                        <hr/>
+                        <span class="table-specifications__value">HDR</span>
+                    </div>
+                </div>
+                <span class="table-specifications__span">Дополнительная информация</span>
+                <div class="table-specifications__content">
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Вес с упаковкой (кг)</span>
+                        <hr/>
+                        <span class="table-specifications__value">17.14 кг</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Вес без упаковки (кг)</span>
+                        <hr/>
+                        <span class="table-specifications__value">12.45 кг</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Высота предмета</span>
+                        <hr/>
+                        <span class="table-specifications__value">71.1 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Глубина предмета</span>
+                        <hr/>
+                        <span class="table-specifications__value">8.34 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Ширина предмета</span>
+                        <hr/>
+                        <span class="table-specifications__value">123.1 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Ширина упаковки</span>
+                        <hr/>
+                        <span class="table-specifications__value">123.5 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Высота упаковки</span>
+                        <hr/>
+                        <span class="table-specifications__value">78.5 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Глубина упаковки</span>
+                        <hr/>
+                        <span class="table-specifications__value">14.9 см</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Доп. опции телевизора</span>
+                        <hr/>
+                        <span class="table-specifications__value">таймер сна</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Размер VESA</span>
+                        <hr/>
+                        <span class="table-specifications__value">300x300</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Возможность крепления на стену</span>
+                        <hr/>
+                        <span class="table-specifications__value">да</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Комплектация</span>
+                        <hr/>
+                        <span class="table-specifications__value">пульт управления; батарейка - 2 шт.; подставка - 2 шт.; комплект
+              запасных винтов - 4 шт.; документация; телевизор; гарантийный талон</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Страна бренда</span>
+                        <hr/>
+                        <span class="table-specifications__value">Китай</span>
+                    </div>
+                    <div class="table-specifications__content-row">
+                        <span class="table-specifications__parameter">Страна производитель</span>
+                        <hr/>
+                        <span class="table-specifications__value">Китай</span>
+                    </div>
+                </div>
+                <p class="table-specifications__text">Информация о технических характеристиках, комплекте поставки,
+                    стране
+                    изготовления и внешнем виде товара носит
+                    справочный характер и основывается на последних доступных сведениях от производителя</p>
+            </div>
+        </div>
+        <div class="product-info__feedback close" id="feedback">
+            <div class="product-info__feedback-title-wrap">
+                <h4 class="product-info__title">Отзывы</h4>
+                <button type="button" class="product-info__feedback-button-add" onclick="openFeedbackAdd()">Написать
+                    отзыв
+                </button>
+            </div>
+            <div class="feedback-add__wrap" id="feedback-add">
+                <form class="feedback-add__form form form-validate" method="post">
+                    <button class="feedback-add__form-close" onclick="openFeedbackAdd()">+</button>
+                    <h4 class="feedback-add__form-title">Оставить отзыв о товаре</h4>
+                    <textarea class="feedback-add__form-textarea" name="message" required placeholder="Общее впечатление" title=""></textarea>
+                    <div class="feedback-add__form-bottom">
+                        <div class="feedback-add__form-bottom-rating">
+                            <span class="feedback-add__form-bottom-span">Поставить оценку</span>
+                            <div class="rating-wrap">
+                                <div class="rating">
+                                    <div class="stars">
+                                        <div class="on" style="width: 0;"></div>
+                                        <div class="live">
+                                            <span data-rate="1"></span>
+                                            <span data-rate="2"></span>
+                                            <span data-rate="3"></span>
+                                            <span data-rate="4"></span>
+                                            <span data-rate="5"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="feedback-add__form-submit" value="Отправить" title=""/>
+                    </div>
+                </form>
+            </div>
+            <div class="feedback-content">
+                <div class="feedback">
+                    <div class="feedback__box-avatar">
+                        <img src="img/avatars/ava-1.png" class="feedback__avatar" alt="" title=""/>
+                    </div>
+                    <div class="feedback__content">
+                        <div class="feedback__info">
+                            <a href="#" class="feedback__name">Евгений</a>
+                            <span class="feedback__data">Вчера, 13:44</span>
+                        </div>
+                        <div class="feedback__rating">
+                            <div class="rating">
+                                <div class="stars">
+                                    <div class="on" style="width: 50%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="color">Цвет: <span class="color__span">серебристый</span></p>
+                        </div>
+                        <p class="feedback__text">Цена-качество этого ТВ доставляет удовольствие! Брал 50" за 25000р. по
+                            скидке.
+                            Доставили на следующий день в пункт выдачи. Скачал на флешку и перенес на mi tv приложение
+                            HD VideoBox,
+                            теперь смотрю все фильмы, сериалы и мультфильмы бесплатно !</p>
+                        <div class="feedback__like">
+                            <a href="#" class="feedback__useful">Отзыв полезен?</a>
+                            <div class="button-like__wrap">
+                                <button class="button-like like"></button>
+                                <span class="button-like__number">12</span>
+                            </div>
+                            <div class="button-like__wrap">
+                                <button class="button-dislike"></button>
+                                <span class="button-like__number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback__box-avatar">
+                        <img src="img/avatars/ava-2.png" class="feedback__avatar" alt="" title=""/>
+                    </div>
+                    <div class="feedback__content">
+                        <div class="feedback__info">
+                            <a href="#" class="feedback__name">Дарья</a>
+                            <span class="feedback__data">28 Августа, 15:36</span>
+                        </div>
+                        <div class="feedback__rating">
+                            <div class="rating">
+                                <div class="stars">
+                                    <div class="on" style="width: 50%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="color">Цвет: <span class="color__span">серебристый</span></p>
+                        </div>
+                        <p class="feedback__text">Похоже, приехал путешественник. Упаковка, явно, вскрывалась ранее.
+                            Телек запихан в
+                            коробку вверх тормашками. Панель потекшая. В последнее время WB возит убитую технику по
+                            просторам России,
+                            получая предоплату. Техника катается, магазин использует чужие деньги в это время. Упаси бог
+                            принять товар
+                            с дефектом. Потом не сможете вернуть. Магазин товар обратно не принимает, отправляет
+                            покупателя в сервис.
+                            Бойтесь заказывать технику в этом магазине, смотрите в оба...</p>
+                        <div class="feedback__like">
+                            <a href="#" class="feedback__useful">Отзыв полезен?</a>
+                            <div class="button-like__wrap">
+                                <button class="button-like like"></button>
+                                <span class="button-like__number">12</span>
+                            </div>
+                            <div class="button-like__wrap">
+                                <button class="button-dislike"></button>
+                                <span class="button-like__number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback__box-avatar">
+                        <img src="img/avatars/ava.png" class="feedback__avatar" alt="" title=""/>
+                    </div>
+                    <div class="feedback__content">
+                        <div class="feedback__info">
+                            <a href="#" class="feedback__name">Евгений</a>
+                            <span class="feedback__data">Вчера, 13:44</span>
+                        </div>
+                        <div class="feedback__rating">
+                            <div class="rating">
+                                <div class="stars">
+                                    <div class="on" style="width: 50%;"></div>
+                                    <div class="live">
+                                        <span data-rate="1"></span>
+                                        <span data-rate="2"></span>
+                                        <span data-rate="3"></span>
+                                        <span data-rate="4"></span>
+                                        <span data-rate="5"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="color">Цвет: <span class="color__span">серебристый</span></p>
+                        </div>
+                        <p class="feedback__text">Цена-качество этого ТВ доставляет удовольствие! Брал 50" за 25000р. по
+                            скидке.
+                            Доставили на следующий день в пункт выдачи. Скачал на флешку и перенес на mi tv приложение
+                            HD VideoBox,
+                            теперь смотрю все фильмы, сериалы и мультфильмы бесплатно !</p>
+                        <div class="feedback__like">
+                            <a href="#" class="feedback__useful">Отзыв полезен?</a>
+                            <div class="button-like__wrap">
+                                <button class="button-like like"></button>
+                                <span class="button-like__number">12</span>
+                            </div>
+                            <div class="button-like__wrap">
+                                <button class="button-dislike"></button>
+                                <span class="button-like__number">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-info__questions close" id="questions">
+            <div class="product-info__questions-title-wrap">
+                <h4 class="product-info__title">Вопросы</h4>
+                <button type="button" class="product-info__feedback-button-add" onclick="openQuestionsAdd()">Задать
+                    вопрос
+                </button>
+            </div>
+            <div class="questions-add__wrap" id="questions-add">
+                <form class="questions-add__form form-validate">
+                    <button class="questions-add__form-close" onclick="openQuestionsAdd()">+</button>
+                    <h4 class="questions-add__form-title">Оставить отзыв о товаре</h4>
+                    <textarea class="questions-add__form-textarea" required name="message" placeholder="Общее впечатление" title=""></textarea>
+                    <div class="questions-add__form-bottom">
+                        <input type="submit" class="questions-add__form-submit" value="Отправить" title=""/>
+                    </div>
+                </form>
+            </div>
+            <div class="question-lvl-1">
+                <div class="question__box-avatar">
+                    <img src="img/avatars/ava-1.png" class="question__avatar" alt="" title=""/>
+                </div>
+                <div class="question__content">
+                    <div class="question__info">
+                        <a href="#" class="question__name">Евгений</a>
+                        <span class="question__data">Вчера, 13:44</span>
+                    </div>
+                    <p class="question__text">Здравствуйте! подскажите если после гарантии 1 год сломается матрица или
+                        процессор (
+                        это дорогие детали) можно ли будет возвратить телевизор или отремонтировать бесплатно, так как
+                        это возможно
+                        будет заводской брак, ведь срок службы телевизора заявлен - 5 лет, а он этот срок например не
+                        проработает и
+                        сломается спустя 1,5 - 2 года?</p>
+                </div>
+                <div class="question-lvl-2">
+                    <div class="question__content">
+                        <div class="question__info">
+                            <a href="#" class="question__name-lvl-2">Ответ Империя HD</a>
+                        </div>
+                        <p class="question__text">Добрый день. В случае необходимости можете обращаться в авторизованный
+                            сервисный
+                            центр. Адреса СЦ вы можете уточнить на нашем официальном сайте. Спасибо.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="question-lvl-1">
+                <div class="question__box-avatar">
+                    <img src="img/avatars/ava-3.png" class="question__avatar" alt="" title=""/>
+                </div>
+                <div class="question__content">
+                    <div class="question__info">
+                        <a href="#" class="question__name">Иван</a>
+                        <span class="question__data">20 Июля 2020, 16:14</span>
+                    </div>
+                    <p class="question__text">здравствуйте при покупке телевизора могут ли мне выписать товарный
+                        чек?</p>
+                </div>
+                <div class="question-lvl-2">
+                    <div class="question__content">
+                        <div class="question__info">
+                            <a href="#" class="question__name-lvl-2">Ответ Империя HD</a>
+                        </div>
+                        <p class="question__text">Добрый день. Для уточнения правил покупки товара обратитесь на горячую
+                            линию
+                            магазина. Спасибо.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="question-lvl-1">
+                <div class="question__box-avatar">
+                    <img src="img/avatars/ava-4.png" class="question__avatar" alt="" title=""/>
+                </div>
+                <div class="question__content">
+                    <div class="question__info">
+                        <a href="#" class="question__name">Юлия</a>
+                        <span class="question__data">Вчера, 13:44</span>
+                    </div>
+                    <p class="question__text">Здравствуйте, скажите пожалуйста, планируется ли скидка на данный
+                        телевизор? И с
+                        какого склада отгрузка, планирую заказать в МО.</p>
+                </div>
+                <div class="question-lvl-2">
+                    <div class="question__content">
+                        <div class="question__info">
+                            <a href="#" class="question__name-lvl-2">Ответ Империя HD</a>
+                        </div>
+                        <p class="question__text">Добрый день. По данному вопросу обратитесь на горячую линию магазина.
+                            Спасибо.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-price">
+        <h4 class="section-price__title">Хиты продаж</h4>
+        <div class="section-price__arrows">
+            <button type="button" class="section-price__arrow-left"></button>
+            <button type="button" class="section-price__arrow-right"></button>
+        </div>
+        <div class="section-price__wrap">
+            <div class="price-list price-slider">
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-5.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-6.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">23 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-7.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">21 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 50%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+                <div class="price-list__item">
+                    <span class="new">Новинка</span>
+                    <div class="price-list__img-wrap">
+                        <img src="img/price/img-8.png" class="price-img" alt="" title=""/>
+                    </div>
+                    <span class="cost">43 990 ₽</span>
+                    <a href="#" class="price-title">
+                        <p class="price-title__text">Ultra HD (4K) LED телевизор 43" LG 43UK6200PLA Samsung</p>
+                    </a>
+                    <div class="rating-wrap">
+                        <div class="rating">
+                            <div class="stars">
+                                <div class="on" style="width: 30%;"></div>
+                                <div class="live">
+                                    <span data-rate="1"></span>
+                                    <span data-rate="2"></span>
+                                    <span data-rate="3"></span>
+                                    <span data-rate="4"></span>
+                                    <span data-rate="5"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="rating__span">12 отзывов</span>
+                    </div>
+                    <div class="box-button-price">
+                        <button class="buy__button">В корзину</button>
+                        <button class="favourites__button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-banner">
+        <img src="img/banners/img-1.png" class="row-banner__img" alt="" title=""/>
+        <a href="#" class="row-banner__link">
+            <h5 class="row-banner__h6">Предзаказ на экосистему Galaxy открыт</h5>
+            <p class="row-banner__text">Оформи предзаказ до 20 августа</p>
+        </a>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__box-content">
+        <a href="index.html" class="footer-logo__link">
+            <img src="img/logo-footer.svg" class="footer-logo__img" alt="" title=""/>
+        </a>
+        <div class="footer__catalog-wrap">
+            <h6 class="footer-catalog__h6">Каталог</h6>
+            <ul class="footer-catalog">
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Телевизионная техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">HI-FI и HI-End оборудование</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Смартфоны и гаджеты</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Товары для дома и сада</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Аксессуары и услуги</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Климатическая и бытовая техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Система умный дом</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__info-wrap">
+            <h6 class="footer-info__h6">Информация</h6>
+            <ul class="footer-info">
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Доставка</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Как сделать заказ?</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Самовывоз</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">О нас</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Оплата</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Контакты</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Гарантии</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <a href="#" class="footer-contacts__phone">+7 495 998-40-07</a>
+            <p class="footer-contacts__text">г. Москва, Багратионовский пр-д, д. 7, к. 3, <br/>ТЦ "Горбушкин Двор", пав.
+                В1-053А</p>
+            <p class="footer-contacts__text">ОГРН 1197746388180 <br/>ИНН/КПП 7720470500/772101001</p>
+        </div>
+    </div>
+    <div class="footer__box-bottom">
+        <div class="box-copyright">
+            <span class="copyright">© 2020 Все авторские права защищены.</span>
+            <a href="#" class="politic__link">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

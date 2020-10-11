@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <title>Империя | Магазин элемктроники</title>
+</head>
+<body>
+
+
+<header class="header">
+    <div class="header__box-top">
+        <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <a href="index.html" class="header-logo__link">
+            <img src="img/logo.svg" class="header__logo" alt="" title=""/>
+        </a>
+
+
+        <a href="tel:+74959984007" class="phone-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#phone"></use></svg></a>
+
+        <form class="header__form">
+            <input type="search" class="header__form-search" placeholder="Строка поиска" title=""/>
+            <input type="submit" class="header__form-submit" value=""/>
+        </form>
+        <div class="header__box-phone">
+            <a href="#" class="header__phone">+7 495 998-40-07</a>
+            <span class="header-time__span">Ежедневно с 10:00 до 18:00</span>
+        </div>
+
+        <div class="btn-search-mobile"><svg class="icon-svg"><use xlink:href="img/sprite.svg#search"></use></svg></div>
+
+        <div class="header__account">
+            <a href="#" class="login">
+                <img src="img/icons/icon-2.svg" class="login__img" alt="" title=""/>
+            </a>
+            <a href="#" class="basket">
+                <img src="img/icons/icon-3.svg" class="basket__img" alt="" title=""/>
+            </a>
+            <span class="product">99</span>
+        </div>
+    </div>
+    <div class="header__box-bottom">
+        <div class="container">
+            <nav class="menu-categories active">
+                <button type="button" class="open-menu__button" onclick="openMenu()">Каталог товаров</button>
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu1"></use></svg>
+                        <a href="#" class="menu__link">Телевизионная техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu2"></use></svg>
+                        <a href="#" class="menu__link">Смартфоны и гаджеты</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu3"></use></svg>
+                        <a href="#" class="menu__link">Аксессуары и услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu4"></use></svg>
+                        <a href="#" class="menu__link">HI-FI и HI-End оборудование</a>
+                        <ul class="header-bottom-menu">
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сайндбары</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Звуковые проекторы</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">DVD и Blu-ray плееры</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Акустика центрального канала</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Системы караоке</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Встраиваемая акустика</a>
+                            </li>
+                            <li class="header-bottom-menu__item">
+                                <a href="#" class="header-bottom-menu__link">Сетевые проигрыватели</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu5"></use></svg>
+                        <a href="#" class="menu__link">Климатическая и бытовая техника</a>
+                    </li>
+                    <li class="menu__item">
+                        <svg class="icon-svg"><use xlink:href="img/sprite.svg#icon-menu6"></use></svg>
+                        <a href="#" class="menu__link">Система умный дом</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu-info">
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Доставка</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Самовывоз</a>
+                </li>
+                <li class="menu-info__item">
+                    <a href="#" class="menu-info__link">Гарантии</a>
+                </li>
+                <li class="menu-info__item open-bottom-menu">
+                    <div class="menu-icon-dots">
+                        <span class="menu-info__span"></span>
+                        <span class="menu-info__span"></span>
+                        <span class="menu-info__span"></span>
+                    </div>
+
+                    <ul class="bottom-menu">
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Оплата</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Как сделать заказ?</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">О нас</a>
+                        </li>
+                        <li class="bottom-menu__item">
+                            <a href="#" class="bottom-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="content-sidebar">
+    <div class="beadcrumbs">
+        <a href="index.html" class="beadcrumbs__link">Главная</a>
+        <a href="#" class="beadcrumbs__link">Доставка</a>
+    </div>
+    <section class="section-delivery">
+        <h2 class="delivery-info__h2">Доставка товара</h2>
+        <h3 class="delivery-info__h3">Подзаголовок</h3>
+        <p class="delivery-info__text">Мы осуществляем доставку заказанного вами товара в течение <strong>трех
+            дней</strong>
+            с момента подтверждения наличия товара на
+            складе. Доставка товара осуществляется до подъезда. Дата и время доставки товара предварительно
+            согласовываются по
+            телефону. В день доставки курьер совершает предварительный звонок.</p>
+        <p class="delivery-info__text red">Внимание! Услуги срочной доставки временно не доступны.</p>
+        <table class="delivery-info__table">
+            <thead class="table-delivery__thead">
+            <tr>
+                <td>Наименование услуги</td>
+                <td>Стоимость</td>
+            </tr>
+            </thead>
+            <tr>
+                <td>Срочная доставка<sup>1</sup> (день в день, кроме субботы и воскресенья) в пределах МКАД</td>
+                <td>2000 руб.</td>
+            </tr>
+            <tr>
+                <td>Срочная доставка<sup>1</sup> (день в день, кроме субботы и воскресенья) за пределы МКАД</td>
+                <td>2000 руб. + 50 руб./км</td>
+            </tr>
+            <tr>
+                <td>Доставка до транспортной компании<sup>2</sup> в пределах МКАД<br/>
+                    <p class="red">Услуги транспортной компании оплачиваются отдельно и не входят в стоимость
+                        доставки</p>
+                </td>
+                <td>1500 руб.</td>
+            </tr>
+            <tr>
+                <td>Доставка до транспортной компании<sup>2</sup> в пределах МКАД<br/>
+                    <p class="red">Услуги транспортной компании оплачиваются отдельно и не входят в стоимость
+                        доставки</p>
+                </td>
+                <td>1500 руб. + 50 руб./км</td>
+            </tr>
+            <tr>
+                <td>Доставка по Москве в пределах МКАД</td>
+                <td>700 руб.</td>
+            </tr>
+            <tr>
+                <td>Доставка за пределы МКАД</td>
+                <td>1500 руб. до 10 км, далее + 50 руб./км</td>
+            </tr>
+        </table>
+        <div class="box-footnotes">
+            <p class="footnote"><sup>1</sup>Заказы на срочную доставку принимаются до 13-00.</p>
+            <p class="footnote"><sup>2</sup>Если вы хотите воспользоваться услугами транспортной компании, то заранее
+                сообщите ее название
+                нам.</p>
+        </div>
+        <p class="delivery-info__text">Внимание! Услуги транспортной компании оплачиваются при получении товара.<br/>
+            Стоимость доставки более одной единицы товара в одном заказе + 200 руб. за каждую дополнительную единицу</p>
+        <h4 class="delivery-info__h4">Подъем товара</h4>
+        <ul class="delivery-info__point-list">
+            <li class="point-list__item">Подъем товара на этаж в случае, если ваш дом не оборудован грузовым лифтом или
+                приобретенный вами товар не
+                помещается в лифт – 100 руб./этаж.
+            </li>
+            <li class="point-list__item">Подъем крупной бытовой техники и телевизоров с диагональю от 65" на лифте –
+                1000 руб.
+            </li>
+            <li class="point-list__item">Подъём крупной бытовой техники и телевизоров с диагональю от 65" без лифта –
+                1000 руб./этаж.
+            </li>
+        </ul>
+        <ol class="delivery-info__number-list">
+            <li class="number-list__item">Подъем товара на этаж в случае, если ваш дом не оборудован грузовым лифтом или
+                приобретенный вами товар не
+                помещается в лифт – 100 руб./этаж.
+            </li>
+            <li class="number-list__item">Подъем крупной бытовой техники и телевизоров с диагональю от 65" на лифте –
+                1000 руб.
+            </li>
+            <li class="number-list__item">Подъём крупной бытовой техники и телевизоров с диагональю от 65" без лифта –
+                1000 руб./этаж.
+            </li>
+        </ol>
+        <p class="delivery-info__text"><strong>Внимание!</strong> В случае невозможности доставки в оговоренное время по
+            независящим от нас
+            обстоятельствам (например,
+            автомобильные пробки), водитель уведомляет об этом покупателя и переносит время доставки на более поздний
+            срок.
+            В случае невозможности принять заказ (в оговоренное с оператором время), покупателю необходимо уведомить об
+            этом
+            интернет-магазин не менее, чем за 2 часа до назначенного времени доставки.</p>
+    </section>
+    <section class="section-banner">
+        <img src="img/banners/img-1.png" class="row-banner__img" alt="" title=""/>
+        <a href="#" class="row-banner__link">
+            <h5 class="row-banner__h6">Предзаказ на экосистему Galaxy открыт</h5>
+            <p class="row-banner__text">Оформи предзаказ до 20 августа</p>
+        </a>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__box-content">
+        <a href="index.html" class="footer-logo__link">
+            <img src="img/logo-footer.svg" class="footer-logo__img" alt="" title=""/>
+        </a>
+        <div class="footer__catalog-wrap">
+            <h6 class="footer-catalog__h6">Каталог</h6>
+            <ul class="footer-catalog">
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Телевизионная техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">HI-FI и HI-End оборудование</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Смартфоны и гаджеты</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Товары для дома и сада</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Аксессуары и услуги</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Климатическая и бытовая техника</a>
+                </li>
+                <li class="footer-catalog__item">
+                    <a href="#" class="footer-catalog__link">Система умный дом</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__info-wrap">
+            <h6 class="footer-info__h6">Информация</h6>
+            <ul class="footer-info">
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Доставка</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Как сделать заказ?</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Самовывоз</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">О нас</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Оплата</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Контакты</a>
+                </li>
+                <li class="footer-info__item">
+                    <a href="#" class="footer-info__link">Гарантии</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contacts">
+            <a href="#" class="footer-contacts__phone">+7 495 998-40-07</a>
+            <p class="footer-contacts__text">г. Москва, Багратионовский пр-д, д. 7, к. 3, <br/>ТЦ "Горбушкин Двор", пав.
+                В1-053А</p>
+            <p class="footer-contacts__text">ОГРН 1197746388180 <br/>ИНН/КПП 7720470500/772101001</p>
+        </div>
+    </div>
+    <div class="footer__box-bottom">
+        <div class="box-copyright">
+            <span class="copyright">© 2020 Все авторские права защищены.</span>
+            <a href="#" class="politic__link">Политика обработки персональных данных</a>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
